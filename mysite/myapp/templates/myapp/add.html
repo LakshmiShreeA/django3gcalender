@@ -1,0 +1,13 @@
+{% extends './base.html'%}
+{%block body%}
+<form method="POST" enctype="multipart/form-data">
+    {%csrf_token%}
+    <input type="text" name="name" id="name" placeholder="enter boook name"><br>
+    <input type="text" name="desc" id="desc" placeholder="enter boook desc"><br>
+    <input type="date" name="start_date" placeholder="start date"><br>
+    <input type="date" name="end_date" placeholder="end date"><br>
+    <input type="time" name="start_time"><br>
+    <input type="time" name="end_time"><br>
+    <input type="submit">
+</form>
+{%endblock%}
